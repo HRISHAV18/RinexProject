@@ -10,3 +10,9 @@ ip = st.text_input('Enter car name :')
 op = model.predict([ip])
 if st.button('Predict'):
   st.title(op[0])
+
+  
+  
+  
+  
+  
