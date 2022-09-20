@@ -7,10 +7,6 @@ model_nb  = joblib.load('gas-diesel')
 st.title('GAS-DIESEL CLASSIFIER')
 ip = st.text_input('Enter car name :')
 
-op = model_nb.predict([ip])
-if st.button('PREDICT'):
+op = model.predict([ip])
+if st.button('Predict'):
   st.title(op[0])
-  
-  
-  
-  
