@@ -5,7 +5,7 @@ import joblib
 model_nb  = joblib.load('gas-diesel')
 
 st.title('GAS-DIESEL CLASSIFIER')
-ip = st.text_input('Enter your text :')
+ip = st.text_input('Enter car name :')
 
 op = model_nb.predict([ip])
 if st.button('PREDICT'):
